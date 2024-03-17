@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Flag</title>
+  <style>
+    /* CSS for the flag */
+    div {
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(to bottom, #ff9933 33.33%, white 33.33%, white 66.67%, #138808 66.67%);
+      position: relative;
+      border-radius: 10px; /* Added border radius to the main div */
+    }
+    div::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px; /* Adjusted width to match the white circle */
+      height: 100px; /* Adjusted height to match the white circle */
+      background: navy;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- The div representing the Indian flag -->
+  <div></div>
+</body>
+</html>
