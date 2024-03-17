@@ -47,3 +47,10 @@ const drink=age>18?"wine":"water"; // right way of using conditional operator �
 console.log(drink)
 
 console.log(`i would like to order ${age>=18?"wine":"water"}`) // we can use ternary operator inside template literal ✅
+
+const years= new Array(1192, 222,222,2211) //it is used to create new instance of an array
+console.log(years)
+
+const names=['kritika', 'shikha','roshni', 'ankita','karuna','vanshikha','niral','ayushi']
+const newnames=names.push('shruti') // it will add the shurti element in the last , it wil mutate the array,and it will return length✅
+console.log(names,newnames)
