@@ -56,3 +56,8 @@ const newnames=names.push('shruti') // it will add the shurti element in the las
 console.log(names,newnames)
 
 console.log(names.unshift('bhupender'), names)// it will also add the element but at the start✅
+
+//pop method
+console.log(names.pop())
+
+console.log(names.indexOf("hi")) // if that element is not present that i will give -1✅
