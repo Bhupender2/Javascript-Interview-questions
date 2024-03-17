@@ -40,26 +40,69 @@ switch (day) {
 
 // conditional(ternary operator)
 
-const age=23;
-age>18?console.log("drink wine"):console.log("drink water") // we dont use this style we basically make expressions and then store it ❌
+const age = 23;
+age > 18 ? console.log("drink wine") : console.log("drink water"); // we dont use this style we basically make expressions and then store it ❌
 
-const drink=age>18?"wine":"water"; // right way of using conditional operator ✅
-console.log(drink)
+const drink = age > 18 ? "wine" : "water"; // right way of using conditional operator ✅
+console.log(drink);
 
-console.log(`i would like to order ${age>=18?"wine":"water"}`) // we can use ternary operator inside template literal ✅
+console.log(`i would like to order ${age >= 18 ? "wine" : "water"}`); // we can use ternary operator inside template literal ✅
 
-const years= new Array(1192, 222,222,2211) //it is used to create new instance of an array
-console.log(years)
+const years = new Array(1192, 222, 222, 2211); //it is used to create new instance of an array
+console.log(years);
 
-const names=['kritika', 'shikha','roshni', 'ankita','karuna','vanshikha','niral','ayushi']
-const newnames=names.push('shruti') // it will add the shurti element in the last , it wil mutate the array,and it will return length✅
-console.log(names,newnames)
+const names = [
+  "kritika",
+  "shikha",
+  "roshni",
+  "ankita",
+  "karuna",
+  "vanshikha",
+  "niral",
+  "ayushi",
+];
+const newnames = names.push("shruti"); // it will add the shurti element in the last , it wil mutate the array,and it will return length✅
+console.log(names, newnames);
 
-console.log(names.unshift('bhupender'), names)// it will also add the element but at the start✅
+console.log(names.unshift("bhupender"), names); // it will also add the element but at the start✅
 
 //pop method
-console.log(names.pop())
+console.log(names.pop());
 
-console.log(names.indexOf("hi")) // if that element is not present that i will give -1 otherwise it will give index no of the element✅
+console.log(names.indexOf("hi")); // if that element is not present that i will give -1 otherwise it will give index no of the element✅
 
-console.log(names.includes('kritika'))
+console.log(names.includes("kritika"));
+
+//constructor function to create an object
+
+function Person(name, age) {
+  (this.name = name),
+    (this.age = age),
+    (this.greet = function () {
+      console.log(`hello my name is + ${this.name}`);
+    });
+}
+
+console.log(new Person("jonas", 54));
+
+// using [] notation
+
+const person = { name: "jonas" };
+
+console.log(person["name"]);
+
+for(let i=1;i<=10;i++){
+  console.log(i)
+}
+
+const jonas=['jonas','schmedtman',2037-1991,'teacher',['micheal','aryan','steven'], true]
+
+const types=[]
+
+for(let i=0;i<jonas.length; i++){
+  console.log(types[i], typeof jonas[i])
+  types[i]= typeof jonas[i];
+  types.push(jonas[i])
+}
+
+console.log(types)
