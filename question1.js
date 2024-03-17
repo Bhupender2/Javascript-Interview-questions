@@ -46,3 +46,4 @@ age>18?console.log("drink wine"):console.log("drink water") // we dont use this 
 const drink=age>18?"wine":"water"; // right way of using conditional operator ✅
 console.log(drink)
 
+console.log(`i would like to order ${age>=18?"wine":"water"}`) // we can use ternary operator inside template literal ✅
