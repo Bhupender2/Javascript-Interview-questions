@@ -7,3 +7,5 @@ else{
   century=21
 }
 console.log(century);
+
+// type coersion
