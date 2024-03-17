@@ -54,3 +54,5 @@ console.log(years)
 const names=['kritika', 'shikha','roshni', 'ankita','karuna','vanshikha','niral','ayushi']
 const newnames=names.push('shruti') // it will add the shurti element in the last , it wil mutate the array,and it will return length✅
 console.log(names,newnames)
+
+console.log(names.unshift('bhupender'), names)// it will also add the element but at the start✅
