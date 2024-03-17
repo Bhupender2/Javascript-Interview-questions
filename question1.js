@@ -38,4 +38,11 @@ switch (day) {
     break; // here its no need to write break bcoz its the last statement which means it will automatically exit the switch statement
 }
 
+// conditional(ternary operator)
+
+const age=23;
+age>18?console.log("drink wine"):console.log("drink water") // we dont use this style we basically make expressions and then store it ❌
+
+const drink=age>18?"wine":"water"; // right way of using conditional operator ✅
+console.log(drink)
 
