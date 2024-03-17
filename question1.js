@@ -9,3 +9,4 @@ else{
 console.log(century);
 
 // type coersion
+console.log('10'-'3'-'4'-2+'5')
