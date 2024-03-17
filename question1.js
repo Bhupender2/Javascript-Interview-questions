@@ -60,4 +60,6 @@ console.log(names.unshift('bhupender'), names)// it will also add the element bu
 //pop method
 console.log(names.pop())
 
-console.log(names.indexOf("hi")) // if that element is not present that i will give -1✅
+console.log(names.indexOf("hi")) // if that element is not present that i will give -1 otherwise it will give index no of the element✅
+
+console.log(names.includes('kritika'))
